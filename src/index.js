@@ -20,7 +20,7 @@ function genneratePoem(event) {
 
     let poemElement = document.querySelector("#poem");
     poemElement.classList.remove("hidden");
-    poemElement.innerHTML = `<span class="blink">Here comes a german poem about ${instructionInput.value}!</span>`;
+    poemElement.innerHTML = `<span class="blink">⏳Here comes a german poem about ${instructionInput.value}!</span>`;
 
     axios.get(apiUrl).then(displayPoem);
     
